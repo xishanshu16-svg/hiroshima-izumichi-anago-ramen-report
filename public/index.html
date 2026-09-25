@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="出道 広島駅店の穴子ラーメンPRに向けた、広島ラーメン系Instagramリール調査・企画ダッシュボード">
+  <title>出道｜穴子ラーメン Instagram Reels Research</title>
+  <style>
+    :root{--ink:#201916;--charcoal:#181413;--deep:#2e201b;--red:#a83b26;--vermilion:#d95936;--gold:#d9aa54;--cream:#f5efe5;--paper:#fffdf8;--muted:#756a63;--line:#e7d9ca;--blue:#315f73;--green:#39705d;--purple:#6d517b;--shadow:0 18px 50px rgba(49,28,19,.11)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic UI",Meiryo,sans-serif;line-height:1.72}a{color:#a33f2a;text-underline-offset:3px}button{font:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(circle at 80% 12%,rgba(217,170,84,.23),transparent 25%),linear-gradient(135deg,#151110 0%,#38241d 57%,#7e2f20 125%);color:#fff;padding:74px 0 54px;border-bottom:4px solid var(--vermilion)}.hero:after{content:"穴子";position:absolute;right:-12px;bottom:-65px;font:900 clamp(7rem,19vw,15rem)/1 Georgia,serif;color:rgba(255,255,255,.035);letter-spacing:.1em}.eyebrow{color:#f1c879;font-size:.74rem;font-weight:900;letter-spacing:.17em;text-transform:uppercase}.hero h1{font-size:clamp(2.15rem,5vw,4.9rem);line-height:1.05;margin:.35rem 0 1rem}.hero p{max-width:850px;color:#e9ddd5;font-size:1.04rem}.stamp{display:inline-flex;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:.46rem .82rem;color:#f1e3d8;font-size:.78rem}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(24,20,19,.96);backdrop-filter:blur(11px);overflow:auto;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,.1)}.nav .wrap{display:flex;gap:1.25rem}.nav a{color:#eee3dc;text-decoration:none;padding:.86rem 0;font-size:.82rem}.nav a:hover{color:#f0bd65}
+    main{padding:36px 0 76px}section{margin-bottom:54px}.section-head{display:flex;gap:20px;align-items:end;justify-content:space-between;margin-bottom:18px}.section-head h2{font-size:clamp(1.55rem,3vw,2.4rem);line-height:1.2;margin:0}.section-head p{margin:0;color:var(--muted);max-width:610px}.kicker{display:block;color:var(--vermilion);font-weight:900;letter-spacing:.1em;font-size:.72rem;margin-bottom:.25rem}
+    .grid{display:grid;gap:16px}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow)}.card h3{margin:.1rem 0 .55rem;line-height:1.35}.card p{margin:.42rem 0}.metric strong{display:block;font:900 2.2rem/1 Georgia,serif;color:#713020}.metric span{font-size:.78rem;color:var(--muted)}.verdict{border-left:5px solid var(--vermilion);background:#fff8ee}.notice{background:#eee6dc;border-radius:13px;padding:13px 15px;color:#584b43;font-size:.88rem}.fact,.analysis,.brief,.verified,.reference,.unknown,.priority{display:inline-flex;padding:.23rem .57rem;border-radius:999px;font-size:.7rem;font-weight:900;margin:.1rem .18rem .1rem 0}.fact{background:#e6eef1;color:#315467}.analysis{background:#eee7f5;color:var(--purple)}.brief{background:#fff0d6;color:#815819}.verified{background:#e4f2eb;color:var(--green)}.reference{background:#f7e0d8;color:#86311e}.unknown{background:#ececec;color:#656565}.priority{background:#f8ded4;color:#923520}.stars{color:#b77920;font-weight:900;letter-spacing:.06em}
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.feature{background:#fff9f1;border:1px solid #ead7c3;border-radius:13px;padding:13px}.feature b{display:block;color:#713020}.table-wrap{overflow:auto}.account-table,.timeline{width:100%;border-collapse:collapse}.account-table th,.account-table td,.timeline th,.timeline td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.account-table th,.timeline th{font-size:.71rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}.num{text-align:right!important;font-variant-numeric:tabular-nums}.tiny{font-size:.77rem;color:var(--muted)}
+    .reel-card{padding:0;overflow:hidden}.reel-head{padding:18px 20px;background:linear-gradient(105deg,#241916,#793121);color:#fff}.rank{display:grid;grid-template-columns:56px 1fr auto;gap:14px;align-items:center}.rankno{font:900 2.1rem/1 Georgia,serif;color:#f0cb88}.views{font-size:1.1rem;font-weight:900;color:#f4cf8c}.meta{color:#dbcac0;font-size:.81rem}.reel-body{padding:20px}.reel-body dl{display:grid;grid-template-columns:122px 1fr;gap:8px 12px;margin:0}.reel-body dt{font-size:.81rem;font-weight:900;color:#6b422f}.reel-body dd{margin:0}.reel-body details{margin-top:13px;border-top:1px solid var(--line);padding-top:11px}.reel-body summary{cursor:pointer;font-weight:900;color:#743621}.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:12px 0}.flow span{background:#f5ece1;border-radius:10px;padding:8px;font-size:.74rem;text-align:center}.flow b{display:block;color:#9b3d28;font-size:.66rem}
+    .pattern{position:relative;padding-top:42px}.pattern .n{position:absolute;right:16px;top:11px;font:900 3rem/1 Georgia,serif;color:#eee0d0}.bar{height:8px;background:#eee5dc;border-radius:9px;overflow:hidden;margin:.7rem 0}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--vermilion),var(--gold))}.transfer{border-top:5px solid var(--vermilion)}.plan{border-top:5px solid var(--gold)}.hook{background:var(--deep);color:#fff;border-radius:13px;padding:13px;margin:12px 0}.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{background:#f2e6d9;border-radius:999px;padding:.3rem .6rem;font-size:.75rem}.plan ul{padding-left:1.2rem}.plan li{margin:.34rem 0}.timeline td:first-child{font-weight:900;color:#793522;white-space:nowrap}.action{display:grid;grid-template-columns:66px 1fr;gap:14px;align-items:start}.action .step{background:var(--deep);color:#f2c473;border-radius:12px;padding:10px;text-align:center;font-weight:900}.source-list li{margin:.45rem 0}.footer{background:#1d1715;color:#d9cec7;padding:32px 0;font-size:.81rem}.footer strong{color:#fff}.quote{font-size:1.16rem;font-weight:900;line-height:1.55;color:#5e2a1d}.check{margin:.35rem 0;padding-left:1.2rem}.check li{margin:.3rem 0}.tab{display:inline-flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}.pill{border:1px solid var(--line);background:#fff9f1;border-radius:999px;padding:.42rem .72rem;font-size:.76rem;font-weight:800}
+    @media(max-width:930px){.g4{grid-template-columns:repeat(2,1fr)}.g3,.feature-grid{grid-template-columns:1fr 1fr}.rank{grid-template-columns:42px 1fr}.views{grid-column:2}.flow{grid-template-columns:1fr}.hero{padding-top:56px}}
+    @media(max-width:640px){.wrap{width:min(100% - 20px,1180px)}.g4,.g3,.g2,.feature-grid{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:7px}.card{padding:16px;border-radius:14px}.reel-body dl{grid-template-columns:1fr}.reel-body dt{margin-top:7px}.account-table{min-width:760px}.timeline{min-width:720px}.hero h1{font-size:2.35rem}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="wrap">
+    <div class="eyebrow">Hiroshima Ramen Reels Intelligence</div>
+    <h1>出道 広島駅店<br>穴子ラーメン PR設計</h1>
+    <p>広島グルメ系4アカウントの公開リール510件を確認。ラーメン・麺系候補59件から、10万再生以上の純ラーメン投稿TOP10と、出道へ転用しやすい5事例を精査しました。</p>
+    <div class="stamp">公開情報確認：2026-09-25 JST　｜　商品条件は公開前に店舗確認</div>
+  </div></header>
+  <nav class="nav"><div class="wrap"><a href="#summary">概要</a><a href="#brand">出道</a><a href="#audit">調査範囲</a><a href="#ranking">TOP10</a><a href="#patterns">成功要因</a><a href="#references">転用事例</a><a href="#plans">企画</a><a href="#shoot">撮影指示</a><a href="#action">Action</a><a href="#sources">出典</a></div></nav>
+
+  <main class="wrap">
+    <section id="summary">
+      <div class="section-head"><div><span class="kicker">01 / EXECUTIVE SUMMARY</span><h2>結論：夜の信頼を、昼の意外性に変える</h2></div><p>「穴子ラーメン」だけで始めず、海鮮居酒屋としての夜の実績を先に1秒で見せると、商品への納得と昼の来店理由を同時につくれます。</p></div>
+      <div class="grid g4">
+        <div class="card metric"><strong>510</strong><span>指定4アカウントの公開リール確認</span></div>
+        <div class="card metric"><strong>59</strong><span>ラーメン・麺系キーワード候補</span></div>
+        <div class="card metric"><strong>50</strong><span>候補中10万再生以上</span></div>
+        <div class="card metric"><strong>40.1万</strong><span>純ラーメンTOP10の中央値</span></div>
+      </div>
+      <div class="card verdict" style="margin-top:16px"><b>最優先クリエイティブ：</b>刺し盛りを0.6秒だけ見せて「夜は海鮮居酒屋。」、すぐに麺上げへ切り替えて「昼は穴子ラーメン。」。最後に価格・提供時間・限定数を<b>確認済みの数字だけ</b>表示します。</div>
+      <div class="grid g2" style="margin-top:16px">
+        <div class="card"><span class="fact">公開情報</span><p class="quote">市場直営の海鮮居酒屋。公式リールは刺し盛りを紹介。</p><p class="tiny">公式Instagramプロフィール・公開リールで確認。</p></div>
+        <div class="card"><span class="brief">PRブリーフ</span><p class="quote">夜の魅力も伝えながら、まず昼に食べに行きたくなる穴子ラーメン。</p><p class="tiny">穴子ラーメンの価格・提供時間・仕様は公開情報で確認できず。以下は企画前提です。</p></div>
+      </div>
+    </section>
+
+    <section id="brand">
+      <div class="section-head"><div><span class="kicker">02 / BRAND FIT</span><h2>出道のPR資産と未確認事項</h2></div><p>事実、ユーザー提供の企画前提、分析仮説を混ぜずに整理。</p></div>
+      <div class="card">
+        <div><span class="fact">確認できた事実</span><span class="brief">PR前提</span><span class="analysis">分析仮説</span></div>
+        <h3>夜の鮮魚への信頼を、昼の一杯の「理由」にできる</h3>
+        <div class="feature-grid">
+          <div class="feature"><b>夜の業態</b>出道 広島駅店は居酒屋。公式プロフィールは「市場直営海鮮居酒屋」と案内。</div>
+          <div class="feature"><b>料理の証拠</b>公式の公開リールは当日の刺し盛りを紹介。公開口コミにも刺身・魚への言及がある。</div>
+          <div class="feature"><b>立地</b>広島市中区橋本町。食べログでは銀山町駅から徒歩圏として掲載。</div>
+          <div class="feature"><b>夜の価格帯</b>食べログ・Hot Pepperの公開情報では、ディナー予算は概ね4,000〜5,000円。</div>
+          <div class="feature"><b>昼の新商品</b>穴子ラーメンのPRはユーザー提供の企画前提。公開Webでは価格・時間・限定数を確認できず。</div>
+          <div class="feature"><b>映像化仮説</b>刺し盛り→穴子→湯気→麺上げ→スープの順で、夜の本業と昼の新規性を15秒で接続。</div>
+        </div>
+        <div class="notice" style="margin-top:14px"><b>公開前の必須確認：</b>商品名、税込価格、提供曜日・時間、開始日、1日限定数、穴子を使う部位、スープの作り方、トッピング、売り切れ条件。未確認の「穴子出汁」「昼限定」「○食限定」はテロップにしないでください。</div>
+      </div>
+      <div class="card" style="margin-top:16px"><h3>推奨コアコピー</h3><p class="quote">「夜は鮮魚で知られる海鮮居酒屋・出道。その店が、昼に届ける穴子ラーメン。」</p><p class="tiny">「昼に届ける」はPR前提。実際の提供時間が確定後に「昼だけ」「ランチ限定」へ変更可能です。強い断定は事実確認後に使用してください。</p></div>
+    </section>
+
+    <section id="audit">
+      <div class="section-head"><div><span class="kicker">03 / ACCOUNT AUDIT</span><h2>指定4アカウントを公開範囲で全件確認</h2></div><p>おすすめ欄には依存せず、各プロフィールの公開リール一覧から取得可能な投稿を確認。</p></div>
+      <div class="card table-wrap">
+        <table class="account-table"><thead><tr><th>アカウント</th><th class="num">フォロワー</th><th class="num">公開リール</th><th>ラーメン系の代表例</th><th>出道との相性</th></tr></thead><tbody>
+          <tr><td><a href="https://www.instagram.com/poco_mmy/" target="_blank" rel="noopener">ぽこ｜@poco_mmy</a></td><td class="num">6.8万人</td><td class="num">70</td><td>とろろ×魚介塩、サイフォン出汁</td><td>珍しい組合せ・出汁工程</td></tr>
+          <tr><td><a href="https://www.instagram.com/hiroshima_nicegourme/" target="_blank" rel="noopener">ナイスグルメ｜@hiroshima_nicegourme</a></td><td class="num">10.2万人</td><td class="num">145</td><td>復活店、常連店、新店</td><td>店の物語・地元の信頼</td></tr>
+          <tr><td><a href="https://www.instagram.com/koinosuke_h/" target="_blank" rel="noopener">鯉の介。｜@koinosuke_h</a></td><td class="num">10.1万人</td><td class="num">125</td><td>住宅街の行列店、広島中華そば</td><td>地域性・行列の社会的証明</td></tr>
+          <tr><td><a href="https://www.instagram.com/hiroshima_lunchsan/" target="_blank" rel="noopener">らんちさん｜@hiroshima_lunchsan</a></td><td class="num">21.1万人</td><td class="num">170</td><td>異業種ラーメン、魚×豚骨</td><td>夜業態からの転換・魚素材</td></tr>
+        </tbody></table>
+        <p class="tiny">合計510件。フォロワー・再生・いいね・コメントは確認時点の公開表示で今後変動します。削除・非公開・Instagramが読み込まない投稿は母数外です。</p>
+      </div>
+    </section>
+
+    <section id="ranking">
+      <div class="section-head"><div><span class="kicker">04 / RAMEN BUZZ TOP 10</span><h2>純ラーメン投稿 TOP10</h2></div><p>10万再生以上の候補50件から、店舗の主題が明確なラーメン投稿を手動精査し、再生数順に掲載。</p></div>
+      <div class="notice" style="margin-bottom:16px">動画全編をフレーム単位で取得できない投稿があるため、「冒頭フック」は公開本文・カバー・確認できたプレビューを基にした要約です。伸びた因果は分析仮説であり、再生増加の唯一の原因を断定していません。</div>
+      <div class="grid g2" id="postGrid"></div>
+    </section>
+
+    <section id="patterns">
+      <div class="section-head"><div><span class="kicker">05 / REPEATABLE PATTERNS</span><h2>ラーメン投稿の再現可能な5パターン</h2></div><p>TOP10と転用事例から、出道で撮影できる構造だけを抽出。</p></div>
+      <div class="grid g3">
+        <div class="card pattern"><div class="n">01</div><h3>店より先に「一杯の理由」</h3><p>500円、住宅街の行列、元店主、新店など、続きを見る理由が1秒で分かる。</p><div class="bar"><i style="width:97%"></i></div><b>出道：海鮮居酒屋が穴子ラーメン</b></div>
+        <div class="card pattern"><div class="n">02</div><h3>味の想像を動きで証明</h3><p>麺上げ、湯気、スープ注ぎ、チャーシュー断面。説明より先に温度と質感を見せる。</p><div class="bar"><i style="width:96%"></i></div><b>出道：穴子→スープ→麺上げ</b></div>
+        <div class="card pattern"><div class="n">03</div><h3>意外な掛け算</h3><p>焼肉店×ラーメン、焼きさんま×豚骨、とろろ×魚介塩。味を確かめたい好奇心が再生を伸ばす。</p><div class="bar"><i style="width:94%"></i></div><b>出道：市場直営海鮮×穴子</b></div>
+        <div class="card pattern"><div class="n">04</div><h3>地元の固有名詞</h3><p>広島代表、住宅街、銀山町など、地元民が自分ごと化できる言葉を早めに置く。</p><div class="bar"><i style="width:89%"></i></div><b>出道：橋本町・広島駅近く</b></div>
+        <div class="card pattern"><div class="n">05</div><h3>保存情報は終盤に集約</h3><p>価格、営業時間、限定数、アクセスを最後に1画面で提示し、来店判断を完了させる。</p><div class="bar"><i style="width:92%"></i></div><b>出道：確定情報だけ表示</b></div>
+      </div>
+    </section>
+
+    <section id="references">
+      <div class="section-head"><div><span class="kicker">06 / BEST TRANSFER REFERENCES</span><h2>出道への転用ランキング</h2></div><p>再生数だけでなく、夜の本業・魚素材・昼への転換との構造類似性を優先。</p></div>
+      <div class="grid g2">
+        <article class="card transfer"><span class="stars">★★★★★</span><h3>焼肉屋が手がけるラーメン｜16.1万再生</h3><p><b>構造：</b>本業の肉への信頼→ラーメンへの意外性。出道は「海鮮居酒屋→穴子ラーメン」へほぼそのまま置換できます。</p><p><a href="https://www.instagram.com/hiroshima_lunchsan/reel/DS4F1c1D1Fy/" target="_blank" rel="noopener">投稿を開く ↗</a></p></article>
+        <article class="card transfer"><span class="stars">★★★★★</span><h3>焼きさんまラーメン｜10.9万再生</h3><p><b>構造：</b>魚×ラーメンの珍しさで「どんな味？」を作る。穴子も味の想像余白が大きく、質問型フックに向きます。</p><p><a href="https://www.instagram.com/hiroshima_lunchsan/reel/DdoX1fMNrkn/" target="_blank" rel="noopener">投稿を開く ↗</a></p></article>
+        <article class="card transfer"><span class="stars">★★★★★</span><h3>サイフォンで取る魚介出汁｜8.9万再生</h3><p><b>構造：</b>調理工程そのものが証拠。10万未満の参考枠ですが、穴子の下処理やスープ工程を見せられる場合は最も強い撮影参考です。</p><p><span class="reference">10万未満・参考</span> <a href="https://www.instagram.com/poco_mmy/reel/Db-krnQhDAb/" target="_blank" rel="noopener">投稿を開く ↗</a></p></article>
+        <article class="card transfer"><span class="stars">★★★★☆</span><h3>とろろ×魚介塩ラーメン｜11.2万再生</h3><p><b>構造：</b>珍しい組合せを料理アップで理解させる。穴子の姿や食感が見える盛付けなら、商品名だけより記憶に残ります。</p><p><a href="https://www.instagram.com/poco_mmy/reel/DcOGSt3hq6V/" target="_blank" rel="noopener">投稿を開く ↗</a></p></article>
+        <article class="card transfer"><span class="stars">★★★★☆</span><h3>銀山町の深夜つけ麺｜30.7万再生</h3><p><b>構造：</b>時間帯を店の個性にする。出道は逆に「夜の海鮮店が昼にだけ見せる顔」として時間差をフックにできます。</p><p><a href="https://www.instagram.com/hiroshima_lunchsan/reel/DXG__G1DRds/" target="_blank" rel="noopener">投稿を開く ↗</a></p></article>
+        <article class="card transfer"><span class="stars">★★★☆☆</span><h3>行列・価格特化のTOP投稿</h3><p><b>注意：</b>行列や安さは強い一方、現時点の出道に同じ事実は確認できません。虚偽の行列演出や未確定価格の強調は避けます。</p><p class="tiny">TOP10から構造だけを参照し、事実は借りない。</p></article>
+      </div>
+    </section>
+
+    <section id="plans">
+      <div class="section-head"><div><span class="kicker">07 / REEL CONCEPTS</span><h2>出道専用リール企画</h2></div><p>まず昼に行きたくなり、見終えたあと夜の来店理由も残る順に掲載。</p></div>
+      <div class="grid g2">
+        <article class="card plan"><span class="priority">優先度 1</span><h3>夜は海鮮。昼は穴子。</h3><p><b>参考：</b>焼肉店のラーメン16.1万／焼きさんまラーメン10.9万</p><div class="hook">0〜3秒：刺し盛り0.6秒→穴子→麺上げ<br>テロップ「夜は海鮮居酒屋。昼は穴子ラーメン。」</div><p><b>狙い：</b>夜の鮮魚への信頼を、昼の新商品の品質根拠に変える。<br><b>対象：</b>広島の新店・限定麺を探す20〜50代、近隣勤務者、魚介ラーメン好き。<br><b>本文：</b>夜の業態→穴子ラーメンの特徴→確定した価格・時間→アクセス。<br><b>CTA：</b>「次の広島ランチ候補に保存」</p><p><b>伸びる理由：</b>業態転換の意外性と、穴子という希少素材の二重フックがある。</p></article>
+        <article class="card plan"><span class="priority">優先度 2</span><h3>穴子、ラーメンにするとどうなる？</h3><p><b>参考：</b>とろろ×魚介塩11.2万／焼きさんま10.9万</p><div class="hook">0〜3秒：穴子の実物→スープ→一口<br>テロップ「穴子、ラーメンにするとどうなる？」</div><p><b>狙い：</b>味の想像がつかないこと自体を視聴理由にする。<br><b>対象：</b>珍しい料理を友人へ送りたい層、魚介系ラーメン好き。<br><b>撮影：</b>穴子の姿、実際の仕込み、スープの色、トッピング、麺との絡み。<br><b>CTA：</b>「穴子好きに送って、味を予想して」</p><p><b>注意：</b>出汁の原料・製法は料理人確認後に表現する。</p></article>
+        <article class="card plan"><span class="priority">優先度 3</span><h3>夜の刺し盛りまで、15秒で予告</h3><p><b>参考：</b>銀山町の深夜つけ麺30.7万／出道公式の刺し盛りリール</p><div class="hook">0〜3秒：穴子ラーメン完成→夜の刺し盛り<br>テロップ「昼に来たら、夜も気になった。」</div><p><b>狙い：</b>昼の来店を入口に、夜の海鮮居酒屋の認知も取る。<br><b>対象：</b>ランチ後の再来店、会食・飲み会候補を探す人。<br><b>構成：</b>昼を11秒、夜を3秒、店舗情報1秒。主役は昼から動かさない。<br><b>CTA：</b>「昼は保存、夜は一緒に行く人へ共有」</p></article>
+        <article class="card plan"><span class="priority">優先度 4</span><h3>一杯ができるまで、音で見せる</h3><p><b>参考：</b>サイフォン出汁8.9万／麺上げ型TOP投稿</p><div class="hook">0〜3秒：包丁音→湯切り音→スープ注ぎ<br>テロップ「音を出して見てください」</div><p><b>狙い：</b>料理人の所作と温度をASMRで証拠化。<br><b>対象：</b>調理工程を好む保存層、無音視聴でもテロップで理解できる設計。<br><b>CTA：</b>「仕込みが気になったら保存」</p><p><b>条件：</b>撮影可能な実工程だけで構成する。</p></article>
+      </div>
+    </section>
+
+    <section id="shoot">
+      <div class="section-head"><div><span class="kicker">08 / SHOOTING SCRIPT</span><h2>撮影指示書｜優先度1・15秒</h2></div><p>夜の紹介は0.6秒と終盤2秒に限定。昼の一杯を主役に保ちます。</p></div>
+      <div class="card table-wrap">
+        <table class="timeline"><thead><tr><th>秒数</th><th>画</th><th>テロップ</th><th>現場指示</th></tr></thead><tbody>
+          <tr><td>0.0–0.6</td><td>夜の刺し盛り</td><td>夜は海鮮居酒屋。</td><td>公式の強みを一瞬で提示。艶と高さが出る斜め45度、皿を画面8割。</td></tr>
+          <tr><td>0.6–1.4</td><td>穴子の最も強いカット</td><td>その店が昼に…</td><td>実際に使用する穴子。焼き・炙りがある場合は火が入る瞬間を60fps。</td></tr>
+          <tr><td>1.4–2.8</td><td>麺上げ＋湯気</td><td>穴子ラーメン。</td><td>麺を低く持ち、逆光気味で湯気を出す。商品名はここで初めて確定。</td></tr>
+          <tr><td>2.8–4.2</td><td>スープを注ぐ</td><td>広島・橋本町</td><td>器の縁から中心へ流れが見える寄り。自然音を残す。</td></tr>
+          <tr><td>4.2–5.8</td><td>穴子の仕込み</td><td>魚を知る店の、一杯</td><td>実工程のみ。骨・焼き・煮る等は使っている工程に限る。</td></tr>
+          <tr><td>5.8–7.2</td><td>トッピング配置</td><td>穴子の香りと旨み</td><td>箸先までピント。味表現は試食・店舗確認後に調整。</td></tr>
+          <tr><td>7.2–8.8</td><td>麺とスープの絡み</td><td>まずは、ひと口</td><td>箸をカメラへ少し寄せる。すすりの直前で切る。</td></tr>
+          <tr><td>8.8–10.3</td><td>スープをすくう</td><td>どんな味か、確かめて</td><td>レンゲの表面に照明を反射。過剰なリアクションは不要。</td></tr>
+          <tr><td>10.3–11.8</td><td>完成丼の俯瞰</td><td>［税込価格］</td><td>価格確定後に差し替え。器と具材が全部入る真上。</td></tr>
+          <tr><td>11.8–13.2</td><td>暖簾・入口</td><td>［提供曜日・時間］</td><td>未確定の「昼限定」は入れない。店名が読める速度を確保。</td></tr>
+          <tr><td>13.2–14.3</td><td>夜の刺し盛り／店内</td><td>夜は、旬の魚と一杯。</td><td>昼の後に夜も思い出せる2カット。夜の比率を増やしすぎない。</td></tr>
+          <tr><td>14.3–15.0</td><td>完成丼＋ロゴ</td><td>出道｜ランチ候補に保存</td><td>位置情報と正式店舗名を投稿側にも設定。</td></tr>
+        </tbody></table>
+      </div>
+      <div class="grid g3" style="margin-top:16px">
+        <div class="card"><h3>必須カット</h3><div class="chips"><span class="chip">刺し盛り</span><span class="chip">穴子</span><span class="chip">麺上げ</span><span class="chip">湯気</span><span class="chip">スープ</span><span class="chip">仕込み</span><span class="chip">完成丼</span><span class="chip">外観</span></div></div>
+        <div class="card"><h3>A/Bフック</h3><p><b>A：</b>夜は海鮮居酒屋。昼は穴子ラーメン。<br><b>B：</b>穴子、ラーメンにするとどうなる？</p><p class="tiny">同素材で冒頭3秒だけ変更し、3秒維持率を比較。</p></div>
+        <div class="card"><h3>撮影設定</h3><p>縦9:16、4K、基本60fps。露出・ホワイトバランス固定。湯気は逆光、麺は背景を暗く。調理音を別録り。</p></div>
+      </div>
+      <div class="card" style="margin-top:16px"><h3>キャプション構成</h3><ol class="check"><li><b>1行目：</b>夜は海鮮居酒屋。昼は穴子ラーメン。</li><li><b>2〜4行目：</b>穴子をどう使った一杯か、確認済みの製法と味を短く。</li><li><b>保存情報：</b>税込価格／提供曜日・時間／限定数／売切条件／最寄り。</li><li><b>夜の補足：</b>夜は市場直営の海鮮居酒屋として刺身や魚料理を提供。</li><li><b>CTA：</b>「広島ランチの次候補に保存。穴子好きには共有。」</li></ol></div>
+    </section>
+
+    <section id="action">
+      <div class="section-head"><div><span class="kicker">09 / ACTION PLAN</span><h2>公開までの最短4ステップ</h2></div><p>未確認情報を確定し、1回の撮影から3本を作って比較します。</p></div>
+      <div class="grid g2">
+        <div class="card action"><div class="step">01</div><div><h3>商品情報を確定</h3><p>価格、時間、曜日、開始日、限定数、穴子の使用部位、出汁・スープの製法を店舗責任者が確認。</p></div></div>
+        <div class="card action"><div class="step">02</div><div><h3>昼夜を同日に撮る</h3><p>昼の完成・仕込みを中心に、夜の刺し盛りと店内を短く追加。15秒本編＋予備カットを確保。</p></div></div>
+        <div class="card action"><div class="step">03</div><div><h3>2種の冒頭で比較</h3><p>Aは昼夜ギャップ、Bは味の疑問。3秒維持率、平均再生時間、保存率、シェア率で勝ちフックを判断。</p></div></div>
+        <div class="card action"><div class="step">04</div><div><h3>来店寄与を記録</h3><p>レジ・予約時に「Instagramを見た」を記録。夜の認知も確認し、2本目は仕込み、3本目は夜への送客に分ける。</p></div></div>
+      </div>
+      <div class="card" style="margin-top:16px"><h3>判断基準</h3><div class="tab"><span class="pill">3秒維持率：A/B差</span><span class="pill">平均再生時間</span><span class="pill">保存率</span><span class="pill">シェア率</span><span class="pill">プロフィール遷移</span><span class="pill">昼来店</span><span class="pill">夜の再来店意向</span></div><p class="tiny">目標値はアカウントの直近10本中央値を基準に設定。外部投稿の再生数を自店KPIとしてそのまま置かないでください。</p></div>
+    </section>
+
+    <section id="sources">
+      <div class="section-head"><div><span class="kicker">10 / SOURCES & LIMITS</span><h2>出典・調査範囲</h2></div><p>数値は公開表示のみ。取得できない値は推測していません。</p></div>
+      <div class="card source-list"><ul>
+        <li><a href="https://www.instagram.com/izumichi_hiroshimaeki/" target="_blank" rel="noopener">出道 広島駅店 公式Instagram</a>：市場直営海鮮居酒屋、営業時間、公開リール・刺し盛り。</li>
+        <li><a href="https://tabelog.com/hiroshima/A3401/A340108/34033184/" target="_blank" rel="noopener">食べログ｜出道 広島駅店</a>：業態、立地、ディナー予算、営業時間。</li>
+        <li><a href="https://www.hotpepper.jp/strJ003958909/" target="_blank" rel="noopener">Hot Pepper｜出道 広島駅店</a>：予算、ドリンク・コース、公開口コミ。</li>
+        <li><a href="https://map.yahoo.co.jp/v3/place/l-6JrVrI3QU" target="_blank" rel="noopener">Yahoo!マップ｜出道</a>：魚料理の公開説明・口コミ。</li>
+        <li>指定4アカウントの公開プロフィール、リールタブ、各投稿ページ：再生数、いいね、コメント、店名、価格、公開本文。</li>
+      </ul><p class="tiny">穴子ラーメンの商品価格、提供時間、開始日、限定数、材料・製法は公開Webで確認できませんでした。レポート内の昼商品に関する記述はユーザー提供のPRブリーフまたは企画仮説です。Instagramの表示仕様により、公開メタデータで反応数が出ない投稿は「取得不可」としています。</p></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap"><strong>出道 広島駅店｜穴子ラーメン Instagram Reels Research</strong><br>公開情報に基づくPR企画資料。撮影・投稿前に、商品情報と営業条件を店舗責任者が確認してください。</div></footer>
+
+  <script>
+    const posts=[
+      {restaurant:'麺匠 睦月',influencer:'らんちさん',handle:'hiroshima_lunchsan',url:'https://www.instagram.com/hiroshima_lunchsan/reel/DWJEQl-Dxr1/',views:'73.9万',likes:'3,854',comments:'45',price:'1杯500円（2日間限定企画）',hook:'「1杯500円」＋周年2日限定',reason:'価格の強さと期限の短さが停止理由を作り、今行くべき理由まで1画面で伝わる。',chain:['停止：500円','期待：限定','証拠：完成丼','報酬：お得','行動：共有'],risk:'限定企画依存。通常商品の再現性は低い。',transfer:'安さは借りず、「夜は海鮮、昼は穴子」の業態ギャップへ置換。',score:3,shots:'刺し盛り／穴子／麺上げ／価格・時間',ab:'A 夜は海鮮。昼は穴子。／B 穴子ラーメン、始まる。'},
+      {restaurant:'中華そば きくま',influencer:'鯉の介。',handle:'koinosuke_h',url:'https://www.instagram.com/koinosuke_h/reel/DQhJdukEv2-/',views:'72.2万',likes:'5,464',comments:'32',price:'中華そば 750円',hook:'住宅街なのに行列／メニューは中華そばとむすび',reason:'住宅街・行列・少数メニューが「地元民だけが知る本物」を感じさせ、価格も来店判断を容易にする。',chain:['停止：住宅街','期待：行列','証拠：一杯','報酬：地元感','行動：保存'],risk:'行列の有無を演出で模倣してはいけない。',transfer:'橋本町の立地と市場直営の背景を、地元の発見として表現。',score:4,shots:'路地／入口／麺上げ／スープ／店名',ab:'A 橋本町で見つけた／B 魚を知る店の一杯'},
+      {restaurant:'八千代きりにゃんラーメン',influencer:'らんちさん',handle:'hiroshima_lunchsan',url:'https://www.instagram.com/hiroshima_lunchsan/reel/DSXLuQoj38b/',views:'44.5万',likes:'2,408',comments:'21',price:'ラーメン 980円',hook:'有名店の元オーナー／珍しい東京風中華そば／朝ラー',reason:'作り手の経歴、地域では珍しい型、朝という利用場面の3要素で味と来店理由を補強。',chain:['停止：元店主','期待：東京風','証拠：スープ','報酬：希少','行動：朝来店'],risk:'肩書きに頼りすぎると料理が弱く見える。',transfer:'出道の市場直営・海鮮業態を、穴子の扱いへの信頼根拠にする。',score:5,shots:'市場・魚／料理人／穴子／スープ／麺',ab:'A 市場直営の店が作る／B 夜の海鮮店が昼だけ'},
+      {restaurant:'らーめん与壱',influencer:'鯉の介。',handle:'koinosuke_h',url:'https://www.instagram.com/koinosuke_h/reel/DQwFnf2Eriw/',views:'42.2万',likes:'2,144',comments:'14',price:'ランチセット 1,100円',hook:'開店前から並ぶ／広島らしい定番中華そば',reason:'開店前の期待感と、地元らしい王道の安心を同居させる。セット価格が保存情報になる。',chain:['停止：開店前','期待：人気','証拠：王道','報酬：安心','行動：保存'],risk:'人気の外部証拠がない段階では使いにくい。',transfer:'穴子という新規性に、海鮮店の安心を組み合わせる。',score:4,shots:'開店準備／丼／麺／スープ／セット情報',ab:'A 広島で珍しい穴子麺／B 魚の店だから作れた'},
+      {restaurant:'RAMEN OF TODAY',influencer:'鯉の介。',handle:'koinosuke_h',url:'https://www.instagram.com/koinosuke_h/reel/DSxKdlAkmro/',views:'40.5万',likes:'2,260',comments:'16',price:'300g 1,900円',hook:'新店なのに連日行列／究極のジャンクフード',reason:'新店、行列、300gという量、極端なビジュアルでスクロール停止を獲得。',chain:['停止：極太・山盛り','期待：新店','証拠：300g','報酬：背徳','行動：共有'],risk:'大盛り・ジャンク路線は出道のブランドと不一致。',transfer:'極端な量ではなく、穴子の姿と湯気を画面いっぱいにして視覚強度だけ転用。',score:2,shots:'完成丼寄り／穴子断面／麺上げ／湯気／ロゴ',ab:'A 穴子が主役の一杯／B 画面から香る穴子'},
+      {restaurant:'らーめんぶぅ。',influencer:'らんちさん',handle:'hiroshima_lunchsan',url:'https://www.instagram.com/hiroshima_lunchsan/reel/DUNiYMWjwVe/',views:'39.7万',likes:'5,894',comments:'25',price:'公開本文から確認できず',hook:'知る人ぞ知る人気店／中毒性／分厚いチャーシュー',reason:'秘密感と中毒性の強い言葉を、厚い肉と濃厚スープのビジュアルが補強する。',chain:['停止：分厚い肉','期待：穴場','証拠：濃厚感','報酬：食欲','行動：共有'],risk:'「中毒性」「知る人ぞ知る」は根拠が弱いと広告的。',transfer:'感情語ではなく、穴子の香り・食感を試食後の具体語で説明。',score:3,shots:'穴子寄り／スープ艶／麺絡み／一口／店頭',ab:'A 穴子の香りを一杯に／B 魚好きに食べてほしい'},
+      {restaurant:'麺匠 如月',influencer:'らんちさん',handle:'hiroshima_lunchsan',url:'https://www.instagram.com/hiroshima_lunchsan/reel/DX3-lYVtQFM/',views:'35.5万',likes:'1,403',comments:'12',price:'公開本文から確認できず',hook:'極太麺／買い物動線で寄れる立地',reason:'麺の太さが一目で分かる視覚差と、立ち寄りやすい利用場面をセットにする。',chain:['停止：極太','期待：食感','証拠：麺上げ','報酬：満腹','行動：来店'],risk:'麺の特徴が弱い商品には転用しづらい。',transfer:'穴子の形・焼き目・トッピングなど、一目で違いが分かる要素を主役に。',score:4,shots:'麺上げ／穴子表面／スープ／箸上げ／外観',ab:'A 見れば分かる、穴子／B この一杯、主役は魚'},
+      {restaurant:'麺屋 森実 八丁堀',influencer:'ナイスグルメ',handle:'hiroshima_nicegourme',url:'https://www.instagram.com/hiroshima_nicegourme/reel/Da9ydRCNuPM/',views:'35.4万',likes:'取得不可',comments:'取得不可',price:'ラーメン 700円',hook:'リピーターが通う／親鶏の噛み応え／牛タン飯',reason:'安定した人気を示す言葉と、親鶏の食感・サイドメニューで具体的な食体験を描く。',chain:['停止：常連','期待：食感','証拠：親鶏','報酬：満足','行動：保存'],risk:'既存人気を前提としたフックは新商品初動では弱い。',transfer:'穴子の食感と、ラーメン以外の夜の魚料理を短く予告。',score:4,shots:'穴子食感／麺／スープ／刺し盛り／情報',ab:'A 昼の一杯、夜の刺身／B 穴子の食感まで見て'},
+      {restaurant:'ラーメン康',influencer:'鯉の介。',handle:'koinosuke_h',url:'https://www.instagram.com/koinosuke_h/reel/DTVSj4JEudp/',views:'35.4万',likes:'1,476',comments:'29',price:'尾道ラーメン 850円',hook:'道沿いで気になる店／週末セットの価値',reason:'日常の移動中に見える店という共感と、尾道ラーメン・セット価格で来店像を具体化。',chain:['停止：気になる店','期待：尾道','証拠：背脂','報酬：満足','行動：週末来店'],risk:'地域定番の尾道ラーメンほど味が想像されやすくない。',transfer:'だからこそ「穴子はどんな味？」を正面から問い、説明で埋める。',score:4,shots:'街角／店名／穴子／スープ／価格',ab:'A 橋本町で気になる一杯／B 穴子ラーメンって知ってる？'},
+      {restaurant:'麺匠 如月',influencer:'らんちさん',handle:'hiroshima_lunchsan',url:'https://www.instagram.com/hiroshima_lunchsan/reel/DbxvHZFNkIk/',views:'34.5万',likes:'2,105',comments:'14',price:'公開本文から確認できず',hook:'野菜どっさり／圧倒的ボリューム',reason:'盛りの高さが無音でも理解でき、満腹感という報酬が一目で伝わる。',chain:['停止：高さ','期待：量','証拠：盛付け','報酬：満腹','行動：共有'],risk:'量を軸にすると穴子の繊細さや夜の海鮮ブランドを損ねる。',transfer:'画面占有率だけを借り、穴子と麺を大きく美しく見せる。',score:2,shots:'完成丼／穴子アップ／麺上げ／スープ／店名',ab:'A 穴子を一杯に／B まず、この穴子を見て'}
+    ];
+    const stars=n=>'★'.repeat(n)+'☆'.repeat(5-n);
+    document.querySelector('#postGrid').innerHTML=posts.map((p,i)=>`<article class="card reel-card"><div class="reel-head"><span class="verified">10万再生以上</span><div class="rank"><div class="rankno">${i+1}</div><div><b>${p.restaurant}</b><div class="meta">${p.influencer}｜<a href="https://www.instagram.com/${p.handle}/" target="_blank" rel="noopener" style="color:#f0c77c">@${p.handle}</a></div></div><div class="views">${p.views}再生</div></div></div><div class="reel-body"><dl><dt>価格</dt><dd>${p.price}</dd><dt>公開反応</dt><dd>いいね ${p.likes}／コメント ${p.comments}</dd><dt>冒頭・本文フック</dt><dd>${p.hook}</dd><dt>伸びた理由</dt><dd>${p.reason}</dd><dt>リスク</dt><dd>${p.risk}</dd><dt>出道への転用</dt><dd>${p.transfer}</dd><dt>再現性</dt><dd class="stars">${stars(p.score)}</dd></dl><div class="flow">${p.chain.map((x,j)=>`<span><b>${['STOP','EXPECT','PROOF','REWARD','ACTION'][j]}</b>${x.split('：')[1]}</span>`).join('')}</div><details><summary>改善台本・検証方法</summary><p><b>必要カット：</b>${p.shots}</p><p><b>A/Bフック：</b>${p.ab}</p><p><b>検証：</b>冒頭3秒維持率、平均再生時間、保存率、シェア率、プロフィール遷移を直近10本中央値と比較。</p><p class="tiny">価格・再生・反応・本文表現は公開情報。因果、感情、転用、改善案は分析仮説です。</p></details><p><a href="${p.url}" target="_blank" rel="noopener">Instagram投稿を開く ↗</a></p></div></article>`).join('');
+  </script>
+</body>
+</html>
